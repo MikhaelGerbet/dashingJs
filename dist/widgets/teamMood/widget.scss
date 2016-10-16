@@ -1,0 +1,152 @@
+@font-face {
+  font-family: 'IcoMoon-Free';
+  src: url('/widgets/teamMood/fonts/IcoMoon-Free.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+.dashingJsTeamMood{
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left: 0;
+
+
+  &.excellent , .box-excellent{
+    background: #1ABC9C !important;
+  }
+  &.good , .box-good{
+    background: #5C91DF !important;
+  }
+  &.average , .box-average{
+    background: #F1C40F !important;
+  }
+  &.hard , .box-hard{
+    background: #FF7A23 !important;
+  }
+  &.sad , .box-sad{
+    background: #8c3b5b !important;
+  }
+  ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li{
+      display: inline-block;
+      padding: 8px;
+      margin: 0 7px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 3px #000000;
+      position: relative;
+
+      .icon {
+        font-size: 40px;
+      }
+
+      .badge{
+        position: absolute;
+        z-index: 1;
+        background: red;
+        right: -7px;
+        top:-7px;
+        /*
+        border-radius: 30px;
+
+        padding: 5px;
+        width: 10px;
+        height: 10px;
+        line-height: 10px;*/
+      }
+    }
+  }
+
+  .messages{
+    padding: 20px;
+    font-style: italic;
+    position: relative;
+    .item{
+      &.ng-enter {
+        transition:0.5s linear all;
+        opacity:0;
+      }
+
+      &.ng-enter.ng-enter-active {
+        opacity:1;
+      }
+      .message{
+        width:100%;
+        > p{
+          font-size: 17px;
+          color: #fff;
+          text-align: left;
+          background: rgba(0,0,0,0.2);
+          border-radius:10px;
+          padding: 5px 30px;
+          height: inherit;
+          position: relative;
+          text-align: center;
+          clear: both;
+
+          &:before {
+            content: "";
+            position: absolute;
+            bottom: -20px;
+            right: 40px;
+            border-width: 0px 0px 20px 20px;
+            border-style: solid;
+            border-color: transparent  rgba(0,0,0,0.2);
+          }
+        }
+      }
+    }
+    .icon {
+      font-size: 20px;
+      margin-top: 10px;
+      float: right;
+      margin-right: 50px;
+    }
+  }
+
+  .icon {
+    font-size:40px;
+    font-family: 'IcoMoon-Free' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Enable Ligatures ================ */
+    letter-spacing: 0;
+    -webkit-font-feature-settings: "liga";
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    -ms-font-feature-settings: "liga" 1;
+    -o-font-feature-settings: "liga";
+    font-feature-settings: "liga";
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    &.icon-excellent:before {
+      content: "\e9df";
+    }
+    &.icon-good:before {
+      content: "\e9e1";
+    }
+    &.icon-average:before {
+      content: "\e9f7";
+    }
+    &.icon-hard:before {
+      content: "\e9fb";
+    }
+    &.icon-sad:before {
+      content: "\e9e5";
+    }
+  }
+}

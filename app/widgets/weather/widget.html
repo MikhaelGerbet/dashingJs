@@ -1,0 +1,16 @@
+<div class="dashingJsWeather" ng-controller="dashingJsWeatherCtrl" style="display:none">
+    <div class="today" ng-repeat="day in data.list | filter:!dt.today">
+        <h3>{{ day.dt.day }}</h3>
+        <h4>{{ city }}</h4>
+        <h2 class="temperature">{{ day.temp.day|number:0}}&deg;</h2>
+        <i class="owf owf-5x owf-{{ day.weather[0].id }}"></i>
+        <h4 class="wind">{{ day.speed|number:0 }} km/h</h4>
+    </div>
+    <div class="week">
+        <div class="col-md-2 text-center " ng-repeat="day in data.list" ng-show="!day.dt.today">
+            <h4>{{ day.dt.day }}</h4>
+            <h5>{{ day.temp.day|number:0 }}&deg;</h5>
+            <i class="owf owf-3x owf-{{ day.weather[0].id }}"></i>
+        </div>
+    </div>
+</div>

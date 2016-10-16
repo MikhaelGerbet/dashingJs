@@ -1,0 +1,31 @@
+'use strict';
+
+dashingJs.
+factory('jobValueA',function($http){
+    return {
+        getValue: function(){
+            return $http.get('http://localhost/server/valueA.json');
+        }
+    }
+}).
+factory('jobValueB',function($http){
+    return {
+        getValue: function(){
+            return $http.get('http://localhost/server/valueB.json');
+        }
+    }
+}).
+factory('jobValueC',function($http){
+    return {
+        getValue: function(){
+            return $http.get('http://localhost/server/valueC.json');
+        }
+    }
+}).
+factory('jobArea',function($http){
+    return {
+        getValue: function(){
+            return $http.get('http://localhost/server/areaExemple.php');
+        }
+    }
+});

@@ -1,0 +1,7 @@
+<div class="dashingJsValue" ng-controller="dashingJsValueCtrl" >
+    <h3 class="title" ng-if="title">{{title}}</h3>
+    <h1 class="val">{{value | number}}</h1>
+    <h3 ng-if="oldValue" class="old_val"><i class="fa" ng-class="{'fa-arrow-down' : value < oldValue, 'fa-arrow-up' : value > oldValue, 'fa-exchange' : value == oldValue}"></i> {{oldValue | number}}</h3>
+    <p ng-if="goal" class="goal">{{goal}}</p>
+    <p class="updatedAt" am-time-ago="at"></p>
+</div>

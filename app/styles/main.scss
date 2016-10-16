@@ -1,0 +1,133 @@
+body {
+  background-color: #222;
+  overflow: hidden;
+  font-family: 'Lato', sans-serif;
+  color:#fff;
+  padding: 8px;
+  div[gridster]{
+    > ul {
+      > li {
+        position: relative;
+        text-align: center;
+
+        &.flipperMode{
+          z-index: 99999;
+        }
+
+        widget{
+          position: absolute;
+          z-index: 1;
+          left: 0;
+          top:0;
+          width: 100%;
+          height:100%;
+          > i[class^=fa] {
+            opacity: .10;
+            color: #ffffff;
+            font-size: 260px;
+            line-height: 100%;
+            position: absolute;
+            z-index: 2;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+
+          > .item{
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+  h1{
+    text-transform: uppercase;
+    font-size:70px;
+  }
+  h2 {
+    text-transform: uppercase;
+  }
+  h3{
+    color: #e5e5e5;
+    text-transform: uppercase;
+    font-size:30px;
+  }
+  .updatedAt{
+    position: absolute;
+    z-index: 2;
+    bottom: 5px;
+    color: #eeeeee;
+    width: 100%;
+    text-align: center;
+  }
+  .error{
+    background: red;
+    position: absolute;
+    z-index: 5;
+    bottom:5px;
+    left: 5px;
+    right: 5px;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    opacity: .7;
+  }
+}
+
+
+
+/* entire container, keeps perspective */
+.flipperContainer {
+  perspective: 500px;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+
+  &:hover{
+    z-index: 1500;
+  }
+
+  &:hover .flipper,
+  &.hover .flipper{
+    transform: rotateY(180deg);
+  }
+
+  .flipper, .front, .back {
+    width: 100%;
+    height: 100%;
+  }
+  /* flip speed goes here */
+  .flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+  /* hide back of pane during swap */
+  .front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  /* front pane, placed above back */
+  .front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+  }
+
+  /* back, initially hidden pane */
+  .back {
+    transform: rotateY(180deg);
+  }
+}
+
+
+
+
+
+
+
+

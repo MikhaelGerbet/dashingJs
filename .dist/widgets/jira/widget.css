@@ -1,0 +1,12 @@
+.dashingJsJira {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.dashingJsJira.fail {
+  background: red;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndpZGdldC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxtQkFBbUI7RUFDbkIsV0FBVztFQUNYLFlBQVk7RUFDWixhQUFhO0NBQ2Q7O0FBRUQ7RUFDRSxnQkFBZ0I7Q0FDakIiLCJmaWxlIjoid2lkZ2V0cy9qaXJhL3dpZGdldC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZGFzaGluZ0pzSmlyYSB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgei1pbmRleDogMDtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogMTAwJTtcbn1cblxuLmRhc2hpbmdKc0ppcmEuZmFpbCB7XG4gIGJhY2tncm91bmQ6IHJlZDtcbn1cbiJdfQ== */

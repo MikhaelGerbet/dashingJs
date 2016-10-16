@@ -1,0 +1,26 @@
+.dashingJsDonut{
+  .donut{
+    width: 300px;
+    margin: -170px auto 0;
+  }
+  .highcharts-container{
+    width:100% !important; height:100% !important;
+  }
+  h1{
+    position: absolute;
+    z-index: 1;
+    color: #ffffff;
+    top:100px;
+    width:100%;
+    text-align: center;
+    margin-top: 70px;
+  }
+  legend{
+    position: absolute;
+    z-index: 1;
+    color: #eee;
+    top:270px;
+    width:100%;
+    text-align: center;
+  }
+}

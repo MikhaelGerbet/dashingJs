@@ -1,0 +1,10 @@
+.dashingJsArea .highcharts-container {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndpZGdldC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSx1QkFBdUI7RUFDdkIsd0JBQXdCO0VBQ3hCLG1CQUFtQjtFQUNuQixZQUFZO0VBQ1osT0FBTztFQUNQLFFBQVE7Q0FDVCIsImZpbGUiOiJ3aWRnZXRzL2FyZWEvd2lkZ2V0LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5kYXNoaW5nSnNBcmVhIC5oaWdoY2hhcnRzLWNvbnRhaW5lciB7XG4gIHdpZHRoOiAxMDAlICFpbXBvcnRhbnQ7XG4gIGhlaWdodDogMTAwJSAhaW1wb3J0YW50O1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHotaW5kZXg6IC0xO1xuICB0b3A6IDA7XG4gIGxlZnQ6IDA7XG59XG4iXX0= */

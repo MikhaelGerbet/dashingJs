@@ -1,0 +1,17 @@
+<div class="dashingJsUpSites" ng-controller="dashingJsUpSitesCtrl" ng-class="{'success' : sitesFail == 0 , 'fail' : sitesFail > 0}">
+    <h3>Site UP</h3>
+    <div class="content">
+        <ul>
+            <li data-ng-repeat="(key, site) in sites track by $index">
+                <span>{{site.name}}</span>
+                <div class="pull-right result" ng-class="{'success' : site.result == 1,'fail' : site.result == 0,'pending' : site.result == 'pending'}">
+                    <i ng-if="site.result == 1" class="fa fa-check"></i>
+                    <i ng-if="site.result == 0" class="fa fa-times"></i>
+                    <i ng-if="site.result == 'pending' && sitesFail != 0 && sitesFail != 1" class="fa fa-refresh  fa-spin fa-fw"></i>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+    <p class="updatedAt" am-time-ago="at" ></p>
+</div>
