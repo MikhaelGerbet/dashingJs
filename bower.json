@@ -1,0 +1,14 @@
+{
+  "name": "dashingjs",
+  "description": "The open source AngularJS based framework that lets you build beautiful dashboards",
+  "version": "0.0.1",
+  "homepage": "https://github.com/MikhaelGerbet/dashingJs",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+
+  },
+  "resolutions": {
+    "showdown": "^1.4.3"
+  }
+}
