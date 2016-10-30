@@ -791,11 +791,10 @@ Showcase
 }
 .device {
     position: absolute;
-    top: -60px;
-    left: 20%;
-    min-height: 676px;
-    width: 359px;
-    background: url('../img/iphone-skeleton.png') no-repeat center center;
+    top: -4px;
+    min-height: 670px;
+    width: 800px;
+    background: url('../img/imac.png') no-repeat center center;
 }
 .device-content {
     position: absolute;
@@ -803,7 +802,7 @@ Showcase
     left: 56px;
     width: 247px;
     height: 445px;
-    background: rgba(0, 0, 0, 0.3);
+    §§background: rgba(0, 0, 0, 0.3);
 }
 .device-content img {
     width: 247px;
@@ -812,7 +811,7 @@ Showcase
 .showcase-wrap {
     position: relative;
     padding: 100px 0;
-    min-height: 600px;
+    min-height: 575px;
 }
 .showcase-slider ul {
     margin: 0;
