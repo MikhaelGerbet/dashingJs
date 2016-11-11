@@ -9,9 +9,7 @@
 **DashingJS** is a open source AngularJS based framework that lets you build beautiful dashboards. 
 With a growing list of installable modules, **DashingJS** is your new dashboard. **DashingJS** is Inspired by the the original Ruby project [dashing.io](http://dashing.io/). 
 
-
-[>> Read more on dashingJs website](https://MikhaelGerbet.github.io/dashingJs)
-
+[![DashingJS website](.github/preview-office.jpg)](https://MikhaelGerbet.github.io/dashingJs)
 
 **Table of contents**
 
@@ -27,6 +25,7 @@ With a growing list of installable modules, **DashingJS** is your new dashboard.
 - [Configuration](#configuration)
   - [Dashboard configuration](#dashboard-configuration)
   - [Widgets configurations](#widgets-configurations)
+    - [Flipmode](#flipmode)
 - [Jobs](#jobs)
 - [Widgets](#widgets)
 - [Contributing Guidelines](#contributing-guidelines)
@@ -133,12 +132,6 @@ The "Flipmode" allows two widgets on the same location (front / back).
 The location rotated 180 ° with a 3D effect to display widgets.
 You can have twice as widget on your dashboard.
 
-_Preview :_
-
-![DashingJS: The open source AngularJS based framework that lets you build beautiful dashboards. ](.github/flipmode-exemple.jpg)
-
-
-
 You can customize the Flipmode  :
 
 |name|type|description|
@@ -181,6 +174,12 @@ var config = {
     ]
 } ;
 ```
+
+_Preview :_
+
+![DashingJS: The open source AngularJS based framework that lets you build beautiful dashboards. ](.github/flipmode-exemple.jpg)
+
+
 ## Jobs
 
 Some of your widgets have external data needs. For example, if you want to display the number of your customers on your *awesome* dashboard,
