@@ -26,7 +26,7 @@ module.exports = function(config) {
             '../bower_components/bootstrap/dist/js/bootstrap.js',
             '../bower_components/angular-i18n/angular-locale_fr-fr.js',
             '../bower_components/moment/locale/fr.js',
-            'config.js',
+            'tests/config.js',
            //'jobs.js',
            //'directives/**/*.js',
            'dashboard/**/*.js'
