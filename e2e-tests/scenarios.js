@@ -2,7 +2,7 @@
 
 /* https://github.com/angular/protractor/blob/master/docs/toc.md */
 
-describe('my app', function() {
+describe('dashingJs', function() {
 
 
   it('should automatically redirect to /dashboard when location hash/fragment is empty', function() {
