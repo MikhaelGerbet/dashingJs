@@ -1,9 +1,1 @@
-<div class="dashingJsJira" ng-controller="dashingJsJiraCtrl" ng-class="{'fail': !!alert}">
-    <div class="error" ng-if="!!error">{{error}}</div>
-    <h3 ng-if="title">{{title}}</h3>
-    <h4>issues open</h4>
-    <h1>{{total}}</h1>
-    <p class="updatedAt" am-time-ago="at" ></p>
-    <div ng-if="!items && !loading">No message yet</div>
-    <div ng-if="loading">Loading... </div>
-</div>
+<div class="dashingJsJira" ng-controller="dashingJsJiraCtrl" ng-class="{'fail': !!alert}"><div class="error" ng-if="!!error">{{error}}</div><h3 ng-if="title">{{title}}</h3><h4>issues open</h4><h1>{{total}}</h1><p class="updatedAt" am-time-ago="at"></p><div ng-if="!items && !loading">No message yet</div><div ng-if="loading">Loading...</div></div>

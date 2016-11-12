@@ -6,10 +6,11 @@
 	<a href="http://choosealicense.com/licenses/mit"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
 	<a href="https://snyk.io/test/github/MikhaelGerbet/dashingJs"><img src="https://snyk.io/test/github/MikhaelGerbet/dashingJs/badge.svg" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/github/MikhaelGerbet/dashingJs" style="max-width:100%;"></a>
 </p>
+
 **DashingJS** is a open source AngularJS based framework that lets you build beautiful dashboards. 
 With a growing list of installable modules, **DashingJS** is your new dashboard. **DashingJS** is Inspired by the the original Ruby project [dashing.io](http://dashing.io/). 
 
-[![DashingJS website](.github/preview-office.jpg)](https://MikhaelGerbet.github.io/dashingJs)
+[![DashingJS website](.github/preview-office.jpg)][DashingJsWebsite]
 
 **Table of contents**
 
@@ -29,6 +30,11 @@ With a growing list of installable modules, **DashingJS** is your new dashboard.
 - [Jobs](#jobs)
 - [Widgets](#widgets)
 - [Contributing Guidelines](#contributing-guidelines)
+  - [Testing](#testing)
+    - [Running Unit Tests](#running-unit-tests)
+    - [End to end testing](#end-to-end-testing)
+  - [Continuous Integration](#continuous-integration)
+    - [Travis CI](#travis-ci)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -263,11 +269,11 @@ Please keep the following in mind:
 - **New Features**: please please discuss in a GitHub issue before you start to alter a big part of the code. Without discussion upfront, the pull request will not be accepted / merged.
 
 
-## Testing
+### Testing
 
 There are two kinds of tests in DashingJS: Unit tests and end-to-end tests.
 
-### Running Unit Tests
+#### Running Unit Tests
 
 DashingJS comes preconfigured with unit tests. These are written in
 [Jasmine][jasmine], which we run with the [Karma Test Runner][karma]. We provide a Karma
@@ -296,7 +302,7 @@ npm run test-single-run
 ```
 
 
-### End to end testing
+#### End to end testing
 
 DashingJS comes with end-to-end tests, again written in [Jasmine][jasmine]. These tests
 are run with the [Protractor][protractor] End-to-End test runner.  It uses native events and has
@@ -338,7 +344,28 @@ the [Java Development Kit (JDK)][jdk] to be installed on your local machine. Che
 
 If JDK is not already installed, you can download it [here][jdk-download].
 
+### Continuous Integration
 
-Thanks for your help in making DashingJS better!
+#### Travis CI
 
+[Travis CI][travis] is a continuous integration service, which can monitor GitHub for new commits
+to your repository and execute scripts such as building the app or running tests. DashingJS contains a Travis configuration file, `.travis.yml`, which will cause Travis to run your
+tests when you push to GitHub.
 
+<p align="center">
+<b>Thanks for your help in making DashingJS better!</b>
+</p>
+
+[bower]: http://bower.io
+[git]: http://git-scm.com/
+[http-server]: https://github.com/nodeapps/http-server
+[jasmine]: https://jasmine.github.io
+[jdk]: https://en.wikipedia.org/wiki/Java_Development_Kit
+[jdk-download]: http://www.oracle.com/technetwork/java/javase/downloads/index.html
+[karma]: https://karma-runner.github.io
+[node]: https://nodejs.org
+[npm]: https://www.npmjs.org/
+[protractor]: https://github.com/angular/protractor
+[selenium]: http://docs.seleniumhq.org/
+[travis]: https://travis-ci.org/
+[DashingJsWebsite]: https://MikhaelGerbet.github.io/dashingJs

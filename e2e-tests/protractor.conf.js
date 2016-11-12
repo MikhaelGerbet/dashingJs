@@ -6,6 +6,8 @@ exports.config = {
   specs: [
     '*.js'
   ],
+  chromeOnly: true,
+  directConnect: true,
 
   capabilities: {
     'browserName': 'chrome'
@@ -18,5 +20,4 @@ exports.config = {
   jasmineNodeOpts: {
     defaultTimeoutInterval: 30000
   }
-
 };
