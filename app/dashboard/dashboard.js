@@ -18,7 +18,7 @@ config(function($routeProvider) {
         }
     }
     $routeProvider.when('/dashboard', {
-        templateUrl: '/views/dashbord.html',
+        templateUrl: '/dashboard/dashboard.html',
         controller: 'DashboardCtrl',
         resolve : {
             lazy: function ($ocLazyLoad){
@@ -27,6 +27,7 @@ config(function($routeProvider) {
         }
     })
 }).
-controller('DashboardCtrl', function($scope, config, $ocLazyLoad) {
-    $scope.items = config.items;
+controller('DashboardCtrl', function($scope, config) {
+    this.items = config.items;// for tests
+    $scope.items = this.items;
 });
