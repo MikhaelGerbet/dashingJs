@@ -7,16 +7,19 @@
   .temperature{
     position: absolute;
     z-index: 3;
-    left: 50px;
+    left: 0px;
+    width: 50%;
     top:80px;
-    text-align: right;
-    font-size: 70px;
+    text-align: center;
+    font-size: 60px;
   }
 
   .wind{
     position: absolute;
     z-index: 3;
-    right: 50px;
+    right: 0px;
+    text-align: center;
+    width: 50%;
     top:120px;
   }
   .today {

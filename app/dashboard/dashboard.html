@@ -16,6 +16,7 @@
                             <i ng-if="o.flip.front.icon" class="fa fa-{{o.flip.front.icon}}"></i>
                             <div ng-if="!!o.flip.front.widget"
                                  ng-init="item = o.flip.front"
+                                 class="item"
                                  ng-include="'widgets/'+o.flip.front.widget+'/widget.html'"></div>
                         </widget>
                     </div>
@@ -24,6 +25,7 @@
                             <i ng-if="o.flip.back.icon" class="fa fa-{{o.flip.back.icon}}"></i>
                             <div ng-if="!!o.flip.back.widget"
                                  ng-init="item = o.flip.back"
+                                 class="item"
                                  ng-include="'widgets/'+o.flip.back.widget+'/widget.html'"></div>
                         </widget>
                     </div>

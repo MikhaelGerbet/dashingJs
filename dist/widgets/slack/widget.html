@@ -1,1 +1,20 @@
-<div class="dashingJsSlack" ng-controller="dashingJsSlackCtrl"><div class="error" ng-if="error">{{error}}</div><h3 ng-if="title">{{title}}</h3><ul class="newsticker"><li data-ng-repeat="(key, item) in items track by $index"><div class="item fade" ng-if="showing == key"><div class="text" ng-init="text = (item.text|emoji)"><p btf-markdown="(text)"></p></div><div class="user"><span>{{item.userData.profile.real_name}}</span> <img ng-src="{{item.userData.profile.image_32}}"></div></div></li></ul><p class="updatedAt" am-time-ago="at" ng-if="showDate"></p><div ng-if="!items && !loading">No message yet</div><div ng-if="loading">Loading...</div></div>
+<div class="dashingJsSlack" ng-controller="dashingJsSlackCtrl" >
+    <div class="error" ng-if="error">{{error}}</div>
+    <h3 ng-if="title">{{title}}</h3>
+    <ul class="newsticker">
+        <li data-ng-repeat="(key, item) in items track by $index">
+            <div class="item fade" ng-if="showing == key">
+                <div class="text" ng-init="text = (item.text|emoji)">
+                    <p btf-markdown="(text)"></p>
+                </div>
+                <div class="user">
+                    <span>{{item.userData.profile.real_name}}</span>
+                    <img ng-src="{{item.userData.profile.image_32}}">
+                </div>
+            </div>
+        </li>
+    </ul>
+    <p class="updatedAt" am-time-ago="at" ng-if="showDate"></p>
+    <div ng-if="!items && !loading">No message yet</div>
+    <div ng-if="loading">Loading... </div>
+</div>
