@@ -1,1 +1,40 @@
-<div class="dashingJsTeamMood" ng-controller="dashingJsTeamMoodCtrl"><div class="error" ng-if="!!error">{{error}}</div><h3 ng-if="!loading">{{title}}</h3><h4 ng-if="!loading">{{teamAverageNotation | number:2}} / 5</h4><ul ng-if="!loading"><li class="box box-excellent" ng-if="moods.excellent.length"><i class="icon icon-excellent"></i> <span class="badge">{{moods.excellent.length}}</span></li><li class="box box-good" ng-if="moods.good.length"><i class="icon icon-good"></i> <span class="badge">{{moods.good.length}}</span></li><li class="box box-average" ng-if="moods.average.length"><i class="icon icon-average"></i> <span class="badge">{{moods.average.length}}</span></li><li class="box box-hard" ng-if="moods.hard.length"><i class="icon icon-hard"></i> <span class="badge">{{moods.hard.length}}</span></li><li class="box box-sad" ng-if="moods.sad.length"><i class="icon icon-sad"></i> <span class="badge">{{moods.sad.length}}</span></li></ul><div class="messages"><div data-ng-repeat="(key, item) in comments track by $index"><div class="item fade" ng-if="showingComment == key"><div class="message"><p>"{{item.comment}}"</p></div><i class="icon icon-{{item.mood}}"></i></div></div></div><p class="updatedAt" am-time-ago="at"></p><div ng-if="!items && !loading">No moods yet</div><div ng-if="loading">Loading...</div></div>
+<div class="dashingJsTeamMood " ng-controller="dashingJsTeamMoodCtrl" >
+    <div class="error" ng-if="!!error">{{error}}</div>
+    <h3 ng-if="!loading">{{title}}</h3>
+    <h4 ng-if="!loading">{{teamAverageNotation | number:2}} / 5</h4>
+    <ul ng-if="!loading">
+        <li class="box box-excellent" ng-if="moods.excellent.length">
+            <i class="icon icon-excellent"></i>
+            <span class="badge" >{{moods.excellent.length}}</span>
+        </li>
+        <li class="box box-good" ng-if="moods.good.length">
+            <i class="icon icon-good"></i>
+            <span class="badge" >{{moods.good.length}}</span>
+        </li>
+        <li class="box box-average" ng-if="moods.average.length">
+            <i class="icon icon-average"></i>
+            <span class="badge" >{{moods.average.length}}</span>
+        </li>
+        <li class="box box-hard" ng-if="moods.hard.length">
+            <i class="icon icon-hard"></i>
+            <span class="badge" >{{moods.hard.length}}</span>
+        </li>
+        <li class="box box-sad" ng-if="moods.sad.length">
+            <i class="icon icon-sad"></i>
+            <span class="badge" >{{moods.sad.length}}</span>
+        </li>
+    </ul>
+
+    <div class="messages">
+        <div data-ng-repeat="(key, item) in comments track by $index">
+            <div class="item fade" ng-if="showingComment == key">
+                <div class="message"><p>"{{item.comment}}"</p></div>
+                <i class="icon icon-{{item.mood}}"></i>
+            </div>
+        </div>
+    </div>
+
+    <p class="updatedAt" am-time-ago="at" ></p>
+    <div ng-if="!items && !loading">No moods yet</div>
+    <div ng-if="loading">Loading... </div>
+</div>

@@ -36,8 +36,20 @@ _config exemple :_
 
 ```js
 var config = {
-    items : {
-        { sizeX : 1, sizeY : 1, row : 0, col : 1, background : '#ec663c', icon : 'clock-o', widget : 'date', params : {date : true, clock : true}},
-    }
+    items : [
+        {
+            sizeX : 1,
+            sizeY : 1,
+            row : 0,
+            col : 1,
+            background : '#ec663c',
+            icon : 'clock-o',
+            widget : 'date',
+            params : {
+                date : true,
+                clock : true
+            }
+        }
+    ]
 }
 ```

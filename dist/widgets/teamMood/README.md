@@ -44,8 +44,19 @@ _config exemple :_
 
 ```js
 var config = {
-    items : {
-        { sizeX : 1, sizeY : 1, row : 1, col : 4, background : '#00A86A', icon : null, widget : 'teamMood', params : {token:'_YOUR_TEAMMOOD_API_TOKEN_'}},
-    }
+    items : [
+        {
+            sizeX : 1,
+            sizeY : 1,
+            row : 1,
+            col : 4,
+            background : '#00A86A',
+            icon : null,
+            widget : 'teamMood',
+            params : {
+                token:'_YOUR_TEAMMOOD_API_TOKEN_'
+            }
+        }
+    ]
 }
 ```

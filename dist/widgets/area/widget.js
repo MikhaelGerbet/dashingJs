@@ -2,9 +2,20 @@
 
 angular.module('dashingApp.dashboard').
 controller('dashingJsAreaCtrl', function($scope, $interval, $element, $injector) {
-    $scope.title = $scope.item.params.title;
-    let job = $injector.get($scope.item.params.job),
-        nbsPoints = $scope.item.params.nbsPoints;
+    var defaultParams = {
+            title : 'Area exemple',
+            job : 'mockJobArea',
+            nbsPoints : 50,
+            interval : 1000
+        },
+        item = $scope.item || {params:{}},
+        params = angular.extend({}, defaultParams, item.params);
+
+
+
+    $scope.title = params.title;
+    let job = $injector.get(params.job),
+        nbsPoints = params.nbsPoints;
 
     $(function () {
         $(document).ready(function () {
@@ -29,17 +40,14 @@ controller('dashingJsAreaCtrl', function($scope, $interval, $element, $injector)
                     backgroundColor:null,
                     events: {
                         load: function () {
-
                             // set up the updating of the chart each second
                             var series = this.series[0];
                             setInterval(function () {
-
                                 job.getValue().success(function(response){
                                     $scope.at = new Date();
                                     series.addPoint([(new Date()).getTime(), response.value], true, true);
                                 });
-
-                            }, $scope.item.params.interval);
+                            }, params.interval);
                         }
                     }
                 },

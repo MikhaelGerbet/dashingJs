@@ -41,8 +41,19 @@ _config exemple :_
 
 ```js
 var config = {
-    items : {
-        { sizeX : 1, sizeY : 1, row : 1, col : 4, background : '#00A86A', icon : null, widget : 'weather', params : {key:'_YOUR_OPEN_WEATHER_MAP_KEY_'}},
-    }
+    items : [
+       {
+            sizeX : 1,
+            sizeY : 1,
+            row : 1,
+            col : 4,
+            background : '#00A86A',
+            icon : null,
+            widget : 'weather',
+            params : {
+                key:'_YOUR_OPEN_WEATHER_MAP_KEY_'
+            }
+       }
+    ]
 }
 ```

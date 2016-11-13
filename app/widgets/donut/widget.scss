@@ -1,10 +1,13 @@
 .dashingJsDonut{
+  display: block !important;
   .donut{
     width: 300px;
     margin: -170px auto 0;
   }
   .highcharts-container{
-    width:100% !important; height:100% !important;
+    width:100% !important;
+    height:100% !important;
+    margin-top: 40px;
   }
   h1{
     position: absolute;

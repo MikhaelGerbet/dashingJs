@@ -1,8 +1,6 @@
 ![DashingJS: The open source AngularJS based framework that lets you build beautiful dashboards. ](../../../.github/header.png)
 
-# Date Widget
-
-###### With Date Widget, display the current date and time on your awesome dashboard !
+# The Area Widget
 
 **Table of contents**
 
@@ -15,11 +13,13 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-
 ## Preview
 
-![DashingJS: The open source AngularJS based framework that lets you build beautiful dashboards. ](.github/widget-date.png)
+![DashingJS: The open source AngularJS based framework that lets you build beautiful dashboards. ](.github/widget-area.png)
 
+## About Area Widget
+
+With Area Widget, display the stats in live.
 
 ## Parameters
 
@@ -29,8 +29,11 @@
 
 |name|type|default|require|description|
 |:---:|:---:|:---:|:---:|:---:|
-|clock|boolean|true|true|_Show time_|
-|date|boolean|true|true|_Show date_|
+|title|string|'Area exemple'|true|_The widget title_|
+|job|string|null|true|_The job name_|
+|nbsPoints|int|50|false|_Number of points_|
+|interval|int|1000|false|_Get data in millisegondes_|
+
 
 _config exemple :_
 
@@ -40,14 +43,16 @@ var config = {
         {
             sizeX : 1,
             sizeY : 1,
-            row : 0,
-            col : 1,
-            background : '#ec663c',
-            icon : 'clock-o',
-            widget : 'date',
+            row : 1,
+            col : 2,
+            background : '#00C044',
+            icon : null,
+            widget : 'area',
             params : {
-                date : true,
-                clock : true
+                interval: 1000,
+                job: 'jobArea',
+                nbsPoints : 50,
+                title : 'area exemple'
             }
         }
     ]

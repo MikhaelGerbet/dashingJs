@@ -37,8 +37,24 @@ _config exemple :_
 
 ```js
 var config = {
-    items : {
-        { sizeX: 1, sizeY: 1, row: 2, col: 0, background: '#26A31C', icon: 'user-md', widget: 'upSites', params: {interval:120000, sites: [{name:'moovone.fr', url:'http://moovone.fr'},{name:'app v1', url:'http://app.moovone.fr'},{name:'blog', url:'http://blog.moovone.fr/'},{name:'API', url:'http://api.moovone.fr/'},{name:'Prepod', url:'http://preprod.moov.one/'}]}},
-    }
+    items : [
+        {
+            sizeX: 1,
+            sizeY: 1,
+            row: 2,
+            col: 0,
+            background: '#26A31C',
+            icon: 'user-md',
+            widget: 'upSites',
+            params: {
+                interval:120000,
+                sites: [
+                    {name:'google.fr', url:'http://google.fr'},
+                    {name:'facebook', url:'http://facebook.com'},
+                    {name:'twitter', url:'http://twitter.com'}
+                ]
+            }
+        }
+    ]
 }
 ```
