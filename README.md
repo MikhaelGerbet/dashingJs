@@ -1,6 +1,7 @@
 ![DashingJS: The open source AngularJS based framework that lets you build beautiful dashboards. ](.github/header.png)
 
 <p align="center">
+	<a href="https://travis-ci.org/MikhaelGerbet/dashingJs"><img src="https://travis-ci.org/MikhaelGerbet/dashingJs.svg?branch=master"></a>
 	<a href="https://david-dm.org/MikhaelGerbet/dashingJs"><img src="https://david-dm.org/MikhaelGerbet/dashingJs.svg" alt="Dependency Status"></a>
 	<a href="https://david-dm.org/MikhaelGerbet/dashingJs#info=devDependencies"><img src="https://david-dm.org/MikhaelGerbet/dashingJs/dev-status.svg" alt="devDependency Status"></a>
 	<a href="http://choosealicense.com/licenses/mit"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>

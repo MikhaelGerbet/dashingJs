@@ -27,6 +27,7 @@ module.exports = function(config) {
             'tests/config.js',
             'dashboard/**/*.js',
             'widgets/**/*widget.js',
+            'tests/jobs.js',
             'widgets/**/*_test.js'
         ],
         autoWatch: true,

@@ -14,12 +14,18 @@ describe('dashingJs', function() {
       browser.get('index.html#!/dashboard');
     });
 
+
+    browser.debugger();
+
+    //expect(element.all(by.css('[ng-view] > div[gridster]'))).toBeDefined();
+    /*
     it('should render gridster when user navigates to /dashboard', function() {
       setTimeout(function(){
         expect(element.all(by.css('[ng-view] > div[gridster]'))).toBeDefined();
         // Let Jasmine know the test is done.
         done();
       }, 500);
-    });
+    });*/
+
   });
 });
