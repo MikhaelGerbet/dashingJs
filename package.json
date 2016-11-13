@@ -52,15 +52,15 @@
     "node-sass": "^3.10.1",
     "optipng": "^1.0.0",
     "pre-commit": "^1.1.3",
-    "protractor": "^3.2.2",
+    "protractor": "^4.0.9",
     "run-sequence": "^1.2.2",
     "wiredep": "^4.0.0",
     "angular-markdown-filter": "^1.3.2"
   },
   "scripts": {
     "postinstall": "bower install",
-    "prestart": "npm install && chromium-browser --disable --disable-translate --disable-infobars --disable-suggestions-service --disable-save-password-bubble --disk-cache-dir=$CHROMIUM_TEMP/cache/ --user-data-dir=$CHROMIUM_TEMP/user_data/ --start-maximized --incognito --kiosk \"http://localhost:8000\" & sleep 5",
-    "start": "http-server -a localhost -p 8000 -c-1 ./dist",
+    "prestart": "npm install && chromium-browser --disable --disable-translate --disable-infobars --disable-suggestions-service --disable-save-password-bubble --disk-cache-dir=$CHROMIUM_TEMP/cache/ --user-data-dir=$CHROMIUM_TEMP/user_data/ --start-maximized --incognito --kiosk \"http://localhost:9002\" & sleep 5",
+    "start": "http-server -a localhost -p 9002 -c-1 ./dist",
 
     "pretest": "npm install",
     "test": "karma start karma.conf.js",
@@ -87,6 +87,5 @@
     }
   },
   "dependencies": {
-
   }
 }
