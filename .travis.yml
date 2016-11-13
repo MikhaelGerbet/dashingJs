@@ -3,7 +3,7 @@ dist: trusty
 
 language: node_js
 node_js:
-  - '4.5'
+  - '6.9.1'
 
 install:
   - export DISPLAY=:99.0
@@ -15,7 +15,9 @@ install:
 
 before_script:
   - npm install
+  - cp app/tests/config.js app/config.js
+  - cp app/tests/config.js dist/config.js
 
 script:
   - npm run test-single-run
-  - (npm start > /dev/null &) && (npm run protractor)
+  #- (npm start > /dev/null &) && (npm run protractor)

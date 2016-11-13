@@ -32,6 +32,10 @@ Weather Widget has an IP geolocation service to automatically detect your locati
 |name|type|default|require|description|
 |:---:|:---:|:---:|:---:|:---:|
 |OpenWeatherMapKey|string|true|true|_YOUR_OPEN_WEATHER_MAP_KEY_|
+|geoloc|boolean|true|true|_Auto localization by IP_|
+|country|string|'France'|false|_Country name if Auto localization is disabled_|
+|city|string|'Paris'|false|_City name if Auto localization is disabled_|
+|interval|int|300000|false|_Refesh data in millisegondes_|
 
 _config exemple :_
 
