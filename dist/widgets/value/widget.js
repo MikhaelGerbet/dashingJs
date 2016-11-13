@@ -1,11 +1,19 @@
 'use strict';
 
 angular.module('dashingApp.dashboard').
-controller('dashingJsValueCtrl', ['$scope', '$http', '$interval', '$injector', function($scope, $http, $interval, $injector) {
-    $scope.title = $scope.item.params.title;
+controller('dashingJsValueCtrl', function($scope, $http, $interval, $injector) {
+    var defaultParams = {
+            title : 'My value',
+            job : 'mockJobValue',
+            goal : 50,
+            interval : 1000*60*5
+        },
+        item = $scope.item || {params:{}},
+        params = angular.extend({}, defaultParams, item.params),
+        job = $injector.get(params.job);
 
-    var job = $injector.get($scope.item.params.job);
-    $scope.goal = $scope.item.params.goal;
+    $scope.title = params.title;
+    $scope.goal = params.goal;
 
     function getValue(){
         job.getValue().success(function(response){
@@ -15,7 +23,6 @@ controller('dashingJsValueCtrl', ['$scope', '$http', '$interval', '$injector', f
         });
     }
 
-
-    $interval(getValue, $scope.item.params.interval);
+    $interval(getValue, params.interval);
     getValue();
-}]);
+});

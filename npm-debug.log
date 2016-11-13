@@ -12,7 +12,7 @@
 8 verbose unsafe-perm in lifecycle true
 9 info dashingjs@0.0.1 Failed to exec protractor script
 10 verbose stack Error: dashingjs@0.0.1 protractor: `protractor e2e-tests/protractor.conf.js`
-10 verbose stack Exit status 1
+10 verbose stack Exit status 199
 10 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:217:16)
 10 verbose stack     at emitTwo (events.js:87:13)
 10 verbose stack     at EventEmitter.emit (events.js:172:7)
@@ -29,7 +29,7 @@
 16 error npm  v2.15.9
 17 error code ELIFECYCLE
 18 error dashingjs@0.0.1 protractor: `protractor e2e-tests/protractor.conf.js`
-18 error Exit status 1
+18 error Exit status 199
 19 error Failed at the dashingjs@0.0.1 protractor script 'protractor e2e-tests/protractor.conf.js'.
 19 error This is most likely a problem with the dashingjs package,
 19 error not with npm itself.

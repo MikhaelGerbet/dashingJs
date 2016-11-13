@@ -13,11 +13,11 @@ describe('dashingApp.dashboard module', function() {
       DashboardCtrl = $controller('DashboardCtrl', {$scope: scope, config: config});
     }));
 
-    it('controller should be defined', inject(function($controller) {
+    it('controller should be defined', inject(function() {
       expect(DashboardCtrl).toBeDefined();
     }));
 
-    it('items length should not be equal to 0', inject(function($controller) {
+    it('items length should not be equal to 0', inject(function() {
       expect(DashboardCtrl.items.length).not.toEqual(0);
     }));
   });

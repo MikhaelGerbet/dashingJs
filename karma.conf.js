@@ -1,9 +1,7 @@
 //jshint strict: false
 module.exports = function(config) {
     config.set({
-
         basePath: './app',
-
         files: [
             '../bower_components/angular/angular.js',
             '../bower_components/angular-route/angular-route.js',
@@ -27,28 +25,23 @@ module.exports = function(config) {
             '../bower_components/angular-i18n/angular-locale_fr-fr.js',
             '../bower_components/moment/locale/fr.js',
             'tests/config.js',
-           //'jobs.js',
-           //'directives/**/*.js',
-           'dashboard/**/*.js'
+            'dashboard/**/*.js',
+            'widgets/**/*widget.js',
+            'tests/jobs.js',
+            'widgets/**/*_test.js'
         ],
-
         autoWatch: true,
-
         frameworks: ['jasmine'],
-
         browsers: ['Chrome'],
-
         plugins: [
             'karma-chrome-launcher',
             'karma-firefox-launcher',
             'karma-jasmine',
             'karma-junit-reporter'
         ],
-
         junitReporter: {
             outputFile: 'test_out/unit.xml',
             suite: 'unit'
         }
-
     });
 };
