@@ -1,4 +1,4 @@
-<div class="dashingJsWeather" ng-controller="dashingJsWeatherCtrl" style="display:none">
+<div class="dashingJsWeather hide" ng-controller="dashingJsWeatherCtrl">
     <div class="today" ng-repeat="day in data.list | filter:!dt.today">
         <h3>{{ day.dt.day }}</h3>
         <h4>{{ city }}</h4>
