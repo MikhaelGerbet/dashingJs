@@ -114,7 +114,7 @@ You can customize the widgets from your dashboard with the parameters below :
 |sizeY|int|1|true|_Widget size Y_|
 |row|int|0|true|_Widget row position_|
 |col|int|0|true|_Widget col position_|
-|background or null|string|#222222|true|_Widget background color (rgb value only)_|
+|background|string or null|#222222|true|_Widget background color (rgb value only)_|
 |icon|string or null|#222222|true|_Widget background icon (font awesome icon class only without "fa-")_|
 |widget|string or null|null|true|_Widget name_|
 |params|object|{}|true|_Widget params_|
